@@ -13,7 +13,6 @@ import { Book } from './models/book.model';
   standalone: true,
   imports: [RouterOutlet, BookListComponent, BookFormComponent, BookMenuComponent],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.css',
   providers: [
     BookService
   ]
