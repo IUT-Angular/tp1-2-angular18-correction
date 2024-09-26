@@ -6,8 +6,7 @@ import { Book } from '../../models/book.model';
   selector: 'app-test-form-reactive',
   standalone: true,
   imports: [ReactiveFormsModule],
-  templateUrl: './test-form-reactive.component.html',
-  styleUrl: './test-form-reactive.component.css'
+  templateUrl: './test-form-reactive.component.html'
 })
 export class TestFormReactiveComponent {
   @Output() addBookEvent = new EventEmitter<Book>();

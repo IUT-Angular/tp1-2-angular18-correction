@@ -21,9 +21,9 @@ import { MatMenuModule } from '@angular/material/menu';
     MatDatepickerModule,
     MatNativeDateModule,
     FormsModule,
-    ReactiveFormsModule],
-  templateUrl: './book-form.component.html',
-  styleUrl: './book-form.component.css'
+    ReactiveFormsModule
+  ],
+  templateUrl: './book-form.component.html'
 })
 export class BookFormComponent {
   @Output() addBookEvent = new EventEmitter<Book>();
