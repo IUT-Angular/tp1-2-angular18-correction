@@ -37,7 +37,7 @@ export class BookFormComponent {
 
   addBook() {    
     if (this.bookForm.invalid) {
-      console.log("ERREUR");
+      console.error("Error addBook");
       return;
     }
     

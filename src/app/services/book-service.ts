@@ -23,8 +23,9 @@ export class BookService {
     }
 
     getBook(id: number): Book | undefined{
-      const book = this.books.find(b => b.id == id);console.log('Fetching book with ID:', id);
-      console.log(this.books);
+      const book = this.books.find(b => b.id == id);
+      console.log('Fetching book with ID:', id);
+      
       return book;
     }
 }
