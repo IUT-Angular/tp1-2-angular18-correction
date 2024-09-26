@@ -50,6 +50,13 @@ A noter : par défaut les packages `karma` et `jasmine` sont installés. Il sont
 6. Ajout des attributs `mat-flat-button color="primary"` sur les balises `button`
 7. Utilisation d'un élément `mat-menu` (voir documentation en annexe)
 
+## Annexes
+
+1. https://angular.dev/guide/forms
+2. input : https://material.angular.io/components/input/overview
+3. button : https://material.angular.io/components/button/overview
+4. menu : https://material.angular.io/components/menu/overview
+
 ## Bonnes pratiques
 
 1. Toujours préciser le type de retour d'une méthode
