@@ -3,6 +3,7 @@
 <p>Voici la liste des livres : </p>
 <ul>
     @for(book of books; track book.id) {
-        <li>{{ book.title }} - {{ book.author }}</li>
+        <!--  {{ book.title }} par {{ book.author }} ({{ book.publicationDate | date:'EEEE dd MMMM yyyy' }})-->
+        <li>{{ book.title }} par {{ book.author }} ({{ book.publicationDate | date:'fullDate' }})</li>
     }
 </ul>

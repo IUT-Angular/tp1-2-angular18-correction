@@ -14,6 +14,7 @@ import { Book } from './models/book';
 export class App {
   protected readonly title = signal('tp2-form-matangular-correction');
 
+  // Injection de dépendance du service BookService
   constructor(protected bookService: BookService){ }
   
   addBook($event: Book): void {
