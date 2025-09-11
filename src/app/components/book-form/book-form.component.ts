@@ -1,25 +1,13 @@
 import { Component, EventEmitter, Output } from '@angular/core';
 
 import { FormControl, FormGroup, FormsModule, ReactiveFormsModule, Validators } from '@angular/forms';
-import { Book } from '../../models/book.model';
+import { Book } from '../../models/book';
 
-import { MatButtonModule } from '@angular/material/button';
-import { MatNativeDateModule } from '@angular/material/core';
-import { MatDatepickerModule } from '@angular/material/datepicker';
-import { MatFormFieldModule } from '@angular/material/form-field';
-import { MatInputModule } from '@angular/material/input';
-import { MatMenuModule } from '@angular/material/menu';
 
 @Component({
   selector: 'app-book-form',
   standalone: true,
   imports: [
-    MatFormFieldModule, 
-    MatInputModule,
-    MatButtonModule,
-    MatMenuModule,
-    MatDatepickerModule,
-    MatNativeDateModule,
     FormsModule,
     ReactiveFormsModule
   ],

@@ -1,18 +1,16 @@
-import { Injectable } from "@angular/core";
-import { BOOKS } from "../datas/book.stub";
-import { Book } from '../models/book.model';
+import { Injectable } from '@angular/core';
+import { Book } from '../models/book';
+import { BOOKS } from '../datas/books.stub';
 
-@Injectable()
+@Injectable({
+  providedIn: 'root'
+})
 export class BookService {
-    private books: Book[];
+	private books:Book[] = BOOKS;
 
-    constructor(){
-        this.books = BOOKS;
-    }
-
-    getAll(): Book[]{
-        return this.books;
-    }    
+	public getAll(): Book[]{
+		return this.books;
+	}
 
     addBook(book: Book): void{
         if(book.id === 0){
@@ -20,12 +18,5 @@ export class BookService {
         }
 
         this.books.push(book);
-    }
-
-    getBook(id: number): Book | undefined{
-      const book = this.books.find(b => b.id == id);
-      console.log('Fetching book with ID:', id);
-      
-      return book;
     }
 }
