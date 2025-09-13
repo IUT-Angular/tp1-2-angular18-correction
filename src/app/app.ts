@@ -4,10 +4,11 @@ import { BookList } from './components/book-list/book-list';
 import { BookFormComponent } from './components/book-form/book-form.component';
 import { BookService } from './services/book-service';
 import { Book } from './models/book';
+import { BookMenuComponent } from './components/book-menu/book-menu.component';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, BookList, BookFormComponent],
+  imports: [RouterOutlet, BookList, BookFormComponent, BookMenuComponent],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
